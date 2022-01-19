@@ -57,12 +57,56 @@ Optimization happens during execution but does not stop the program
 
 Execution Context 
 - Environment in which a piece of JS is executed. Stores all the necessary info for some code to be executed.
-
 - Contains let, const, var, functions, scope chain, this keyword
-
 - Arrow functions has no this keyword and argument objects.
 
 Call Stack - place where execution contexts get stacked on top of each other, to keep track of where we are in the execution, like a map.
+
+
+//Scope and The Scope Chain
+
+Scoping - Where can we access a certain variable, and where not?
+
+Lexical Scoping 
+
+- Scoping is controlled by placement of functions and blocks in the code
+- Nested function B inside function A has access to the variables of function A.
+
+Scope - Environment in which a certain variable is declared.
+
+Scope of a variable - region of our code where a certain variable can be accessed.
+
+
+Global Scope 
+
+- outside of any function or block 
+- accessible everywhere
+
+Function Scope 
+
+- accessible only inside function
+- also called local scope  
+
+Block Scope 
+
+- Variables are accessible only inside block (if, while, for)
+- Only let and const variables, var is only function scope.
+
+Scope Chain
+
+- Scope has access to all variables from all outer scopes.
+- Scope chain can only look up. (Parent cannot access child scopes).
+
+
+
+
+
+
+
+
+
+
+
 
 
 
