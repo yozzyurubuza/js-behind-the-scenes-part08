@@ -108,8 +108,25 @@ Hoisting
 Temporal Dead Zone - Cannot be used before initialization, even if the code is in the same scope.
 
 
+//The THIS keyword
 
+This keyword/variable
 
+- Special variable that is created for every execution context (every function).
+
+- Takes the value of the "owner" of the function in which the this keyword is used.
+
+- This is not static. Depends on how the function is called.
+
+Method - this = object that is calling the method
+
+Simple function call - this = undefined
+
+Arrow functions - this = this of surrounding function (parent)
+
+Event listener - this = DOM element that the handler is attached to.
+
+- This does not point to the function itself, and also not the its variable environment.
 
 
 
