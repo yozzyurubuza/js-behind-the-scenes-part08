@@ -97,9 +97,15 @@ Scope Chain
 - Scope has access to all variables from all outer scopes.
 - Scope chain can only look up. (Parent cannot access child scopes).
 
-//
+//Hoisting in Javascript
 
+Hoisting
 
+- Makes some types of variables accessible / usable in the code before they are actually declared.
+
+- Variable lifted to the top of their scope.
+
+Temporal Dead Zone - Cannot be used before initialization, even if the code is in the same scope.
 
 
 
