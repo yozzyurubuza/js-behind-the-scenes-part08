@@ -97,6 +97,8 @@ Scope Chain
 - Scope has access to all variables from all outer scopes.
 - Scope chain can only look up. (Parent cannot access child scopes).
 
+//
+
 
 
 
