@@ -128,6 +128,22 @@ Event listener - this = DOM element that the handler is attached to.
 
 - This does not point to the function itself, and also not the its variable environment.
 
+// Primitives, Objects, and The Javascript Engine
+
+Primitives 
+- Number, String, Boolean, Undefined, Null, Symbol, BigInt
+- Stored in Call Stack
+- Primitives create new address with new value when placed in the call stack
+
+
+Objects 
+- Object literal, Arrays, Functions, etc.
+- Stored in Heap
+- Objects create new address but the value is referenced in the Heap, which holds the value.
+
+- So when using a 2nd object to reference to the 1st object, changing the value would also affect the 1st, or all of the objects that holds the same because no new address is created, the value of the object that is pointed in the heap is the one being changed.
+
+- Even if defined in const, the value can still be changed.
 
 
 
